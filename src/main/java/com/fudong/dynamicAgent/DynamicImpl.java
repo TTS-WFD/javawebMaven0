@@ -9,6 +9,7 @@ public class DynamicImpl {
         AnimalInterface proxy = (AnimalInterface) DynamicProxyImpl.getProxy(cat);
         proxy.call();
         proxy.eat();
+        System.out.println("测试中……");
     }
 
 }
