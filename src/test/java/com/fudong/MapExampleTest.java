@@ -39,5 +39,9 @@ public class MapExampleTest {
     @Test
     public void testAnnotationExample(){mape.annotationExample(mape.new Person("awng"));};
 
+    @Test
+    public void testFirstExample(){
+        mape.firstExample();
+    }
 }
 
