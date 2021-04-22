@@ -4,11 +4,29 @@ import com.fudong.annotation.AnnotationExample;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class MapExample {
+
+    class Pair<T>{
+        private T first;
+        private T last;
+        public Pair(T first,T last){
+            this.first = first;
+            this.last = last;
+        }
+
+    }
+
+    class IntPair extends Pair<Integer>{
+
+        public IntPair(Integer first, Integer last) {
+            super(first, last);
+        }
+    }
 
     class Person{
         private String name;
@@ -25,6 +43,24 @@ public class MapExample {
         void morning(String name);
 
         void say(String name);
+    }
+
+    public static int add(Pair<Number> p){
+        Number first = p.first;
+        Number last = p.last;
+        return first.intValue() + last.intValue();
+    }
+
+    public  void firstExample(){
+        String[] s1 = {"asa"};
+        String[] s = new String[]{"asa","wer"};
+        Arrays.sort(s);
+        Class c = String.class;
+        Constructor[] cons = c.getConstructors();
+        System.out.println(cons);
+        if (s instanceof  String[]){
+
+        }
     }
 
     public void proxyExample(){
