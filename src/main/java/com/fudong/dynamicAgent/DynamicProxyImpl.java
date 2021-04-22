@@ -1,5 +1,7 @@
 package com.fudong.dynamicAgent;
 
+import com.fudong.interfaces.AnimalInterface;
+
 import java.lang.reflect.Proxy;
 
 public class DynamicProxyImpl {
