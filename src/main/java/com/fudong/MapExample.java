@@ -52,7 +52,7 @@ public class MapExample {
     }
 
     public  void firstExample(){
-        String[] s1 = {"asa"};
+        String[] s1 = {"asa","dfgs"};
         String[] s = new String[]{"asa","wer"};
         Arrays.sort(s);
         Class c = String.class;
